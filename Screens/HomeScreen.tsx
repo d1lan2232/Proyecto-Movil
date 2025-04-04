@@ -16,7 +16,7 @@ export default function HomeScreen({navigation}: any) {
                 <Image style={styles.imagen} source={{uri: 'https://pngimg.com/d/mario_PNG22.png'}}/>
                 <TouchableOpacity
                     style= {styles.btn}
-                    onPress={()=> navigation.navigate("Top")}
+                    onPress={()=> navigation.navigate("Login")}
                 >
                     <Text style={{fontSize: 25, textAlign: 'center', color: 'white'}}>Ingresar</Text>
                 </TouchableOpacity>

@@ -5,6 +5,7 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import IngresarPuntajeScreen from "../Screens/IngresarPuntajeScreen";
 import ConsultarPuntajeScreen from "../Screens/ConsultarPuntajeScreen";
 import TopPuntajeScreen from "../Screens/TopPuntajeScreen";
+import LoginScreen from "../Screens/LoginScreen";
 
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ function MyStack(){
         headerShown: true, 
     }}>
         <Stack.Screen name= "Home" component={HomeScreen}/>
+        <Stack.Screen name= "Login" component={LoginScreen}/>
         <Stack.Screen name= "Top" component={MyTop}/>
     </Stack.Navigator>
 }
@@ -27,8 +29,8 @@ function MyStack(){
 function MyTop(){
     return <Top.Navigator
     screenOptions={{
-        tabBarStyle: { backgroundColor: 'black' },  // Color de fondo del tab bar
-        tabBarIndicatorStyle: { backgroundColor: 'red', height: 4 }, // Indicador debajo del tab activo
+        tabBarStyle: { backgroundColor: 'black' },  
+        tabBarIndicatorStyle: { backgroundColor: 'red', height: 4 }, 
         tabBarActiveTintColor: 'white', 
         tabBarInactiveTintColor: 'gray',
       }}>
