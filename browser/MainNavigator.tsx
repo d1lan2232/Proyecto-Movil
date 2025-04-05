@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import IngresarPuntajeScreen from "../Screens/IngresarPuntajeScreen";
 import ConsultarPuntajeScreen from "../Screens/ConsultarPuntajeScreen";
-import TopPuntajeScreen from "../Screens/TopPuntajeScreen";
 import LoginScreen from "../Screens/LoginScreen";
+import VerPuntajeScreen from "../Screens/VerPuntajeScreen";
 
 
 const Stack = createStackNavigator();
@@ -37,7 +37,7 @@ function MyTop(){
         
         <Top.Screen name= "Ingresar" component={IngresarPuntajeScreen}/>
         <Top.Screen name= "Consultar" component={ConsultarPuntajeScreen}/>
-        <Top.Screen name= "MaxPuntaje" component={TopPuntajeScreen}/>
+        <Top.Screen name= "ListaVideoGames" component={VerPuntajeScreen}/>
     </Top.Navigator>
 }
 
