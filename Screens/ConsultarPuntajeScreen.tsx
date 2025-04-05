@@ -30,7 +30,7 @@ const ConsultarPuntajeScreen = ({ navigation }: any) => {
             game: scoreData.game,
             score: scoreData.score,
           }));
-          console.log("Array de puntajes:", scoresArray); 
+          // console.log("Array de puntajes:", scoresArray); 
 
           setScores(scoresArray);
 
